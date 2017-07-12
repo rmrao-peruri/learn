@@ -1,0 +1,16 @@
+tools\config\DbInitConfig.class
+tools\mybatis\data\Payment.class
+tools\mybatis\data\PaymentDebtor.class
+tools\config\Config.class
+tools\mybatis\mapper\PaymentMapper.class
+tools\jpa\repo\PaymentRepository.class
+tools\jpa\service\PayService.class
+tools\jpa\service\PayFullService.class
+tools\jpa\repo\ReadOnlyRepository.class
+tools\config\DbProp.class
+tools\jpa\repo\PaymentFullRepository.class
+tools\mybatis\service\PayServiceMb.class
+tools\mysb\App.class
+tools\jpa\data\PaymentFull.class
+tools\jpa\data\Payment.class
+tools\jpa\data\PaymentDebtor.class

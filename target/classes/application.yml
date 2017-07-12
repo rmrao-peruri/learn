@@ -1,0 +1,24 @@
+spring:
+    jackson:
+        default-property-inclusion: non_null
+
+stsds:
+    schemas:
+        sg:
+            url: jdbc:mysql://ec2-34-213-11-83.us-west-2.compute.amazonaws.com:3306/learn
+            username: raomysql
+            password: awsRdbms201&
+            driverClassName: com.mysql.cj.jdbc.Driver
+            test-on-borrow: true
+            test-while-idle: true
+            validation-query: select 1;
+            maxActive: 4
+
+        
+logging:
+    file: c:/temp/spring-boot.log
+    level:
+        org:
+            springframework: INFO
+            
+        tools: DEBUG

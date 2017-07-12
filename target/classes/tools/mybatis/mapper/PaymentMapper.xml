@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tools.mybatis.mapper.PaymentMapper">
+  <select id="findAll" parameterType="tools.mybatis.data.Payment" resultMap="PaymentResult">
+    SELECT a.payment_id, a.ccy, a.dbtr_name, a.dbtr_ac_id, 
+	       b.vpa AS vpa 
+    FROM   payment a 
+    LEFT OUTER JOIN payment_addl_dtl b
+    ON     b.payment_id = a.payment_id
+    <if test="id != null">
+      WHERE a.payment_id = #{id}
+    </if>
+  </select>
+  <resultMap type="tools.mybatis.data.Payment" id="PaymentResult">
+    <id property="id" column="payment_id" />
+    <result property="dbtr.acId" column="dbtr_ac_id" />
+    <result property="dbtr.name" column="dbtr_name" />
+  </resultMap>
+</mapper>

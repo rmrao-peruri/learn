@@ -1,0 +1,43 @@
+[  { "_class" : "tools.jpa.data.Payment",
+    "id" : 1,
+    "ccy" : "USD",
+    "dbtr" : 
+        { "name" : "John Doe",
+          "acId" : "AC01" }
+   },
+   { "_class" : "tools.jpa.data.Payment",
+    "id" : 2,
+    "ccy" : "INR",
+    "dbtr" : 
+        { "name" : "Jane Doe",
+          "acId" : "AC02" }
+   },
+   { "_class" : "tools.jpa.data.Payment",
+    "id" : 3,
+    "ccy" : "SGD",
+    "dbtr" : 
+        { "name" : "Tang",
+          "acId" : "AC03" }
+   },
+   { "_class" : "tools.jpa.data.Payment",
+    "id" : 4,
+    "ccy" : "AUD",
+    "dbtr" : 
+        { "name" : "Mike",
+          "acId" : "AC04" }
+   },
+   { "_class" : "tools.jpa.data.Payment",
+    "id" : 5,
+    "ccy" : "HKD",
+    "dbtr" : 
+        { "name" : "Tin Hau",
+          "acId" : "AC05" }
+   },
+   { "_class" : "tools.jpa.data.Payment",
+    "id" : 6,
+    "ccy" : "AED",
+    "dbtr" : 
+        { "name" : "Sheik Hussain",
+          "acId" : "AC06" }
+   }
+]
